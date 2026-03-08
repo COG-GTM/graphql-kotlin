@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Expedia, Inc
+ * Copyright 2026 Expedia, Inc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -173,9 +173,10 @@ class DownloadSDLActionTest {
         val params = mockParameters(endpoint, headers, timeout, schemaFile)
         val action = createAction(params)
 
-        assertFailsWith<RuntimeException>("Connection refused") {
+        val exception = assertFailsWith<RuntimeException> {
             action.execute()
         }
+        assertEquals("Connection refused", exception.message)
     }
 
     @Test

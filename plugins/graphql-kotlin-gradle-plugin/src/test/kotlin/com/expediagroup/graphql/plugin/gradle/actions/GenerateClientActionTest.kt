@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Expedia, Inc
+ * Copyright 2026 Expedia, Inc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir
 import java.io.File
 import java.nio.file.Path
+import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
@@ -466,9 +467,10 @@ class GenerateClientActionTest {
         )
         val action = createAction(params)
 
-        assertFailsWith<RuntimeException>("Schema parsing failed") {
+        val exception = assertFailsWith<RuntimeException> {
             action.execute()
         }
+        assertEquals("Schema parsing failed", exception.message)
     }
 
     @Test
