@@ -73,7 +73,7 @@ values={[
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <kotlin.jvmTarget>17</kotlin.jvmTarget>
+        <kotlin.jvmTarget>21</kotlin.jvmTarget>
         <kotlin.version>1.7.22</kotlin.version>
         <graphql-kotlin.version>${latestGraphqlKotlinVersion}</graphql-kotlin.version>
         <!-- lib versions -->
@@ -152,7 +152,7 @@ values={[
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <kotlin.jvmTarget>17</kotlin.jvmTarget>
+        <kotlin.jvmTarget>21</kotlin.jvmTarget>
         <kotlin.version>1.7.22</kotlin.version>
         <graphql-kotlin.version>${latestGraphqlKotlinVersion}</graphql-kotlin.version>
         <!-- lib versions -->
@@ -346,7 +346,7 @@ values={[
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <kotlin.jvmTarget>17</kotlin.jvmTarget>
+        <kotlin.jvmTarget>21</kotlin.jvmTarget>
         <kotlin.version>1.7.22</kotlin.version>
         <graphql-kotlin.version>${latestGraphqlKotlinVersion}</graphql-kotlin.version>
         <!-- plugin versions -->
@@ -411,7 +411,7 @@ values={[
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <kotlin.jvmTarget>17</kotlin.jvmTarget>
+        <kotlin.jvmTarget>21</kotlin.jvmTarget>
         <kotlin.version>1.7.22</kotlin.version>
         <graphql-kotlin.version>${latestGraphqlKotlinVersion}</graphql-kotlin.version>
         <!-- plugin versions -->

@@ -73,7 +73,7 @@ internal fun verifyClientGeneration(config: GraphQLClientGeneratorConfig, testDi
     }
 
     val compilationResult = KotlinCompilation().apply {
-        jvmTarget = "17"
+        jvmTarget = "21"
         sources = generatedSources
         inheritClassPath = true
         if (config.serializer == GraphQLSerializer.KOTLINX) {
