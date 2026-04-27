@@ -28,11 +28,11 @@ dependencies {
 
 tasks {
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(21)
     }
     withType<KotlinCompile> {
         kotlinOptions {
-            jvmTarget = "17"
+            jvmTarget = "21"
             freeCompilerArgs = listOf("-Xjsr305=strict")
         }
     }
