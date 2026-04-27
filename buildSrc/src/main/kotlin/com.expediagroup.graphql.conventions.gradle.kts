@@ -19,7 +19,7 @@ plugins {
 val libs = the<LibrariesForLibs>()
 tasks {
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(21)
     }
     val kotlinJvmVersion: String by project
     withType<KotlinCompile> {
