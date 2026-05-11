@@ -27,7 +27,7 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
         freeCompilerArgs = listOf("-Xjsr305=strict")
     }
 }
@@ -38,7 +38,7 @@ tasks {
         config = files(File(rootDir.parent, "detekt.yml").absolutePath)
     }
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(21)
     }
     ktlint {
         version.set(libs.versions.ktlint.core.get())
