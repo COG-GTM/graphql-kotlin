@@ -17,11 +17,11 @@ plugins {
 // this is a workaround to enable version catalog usage in the convention plugin
 // see https://github.com/gradle/gradle/issues/15383#issuecomment-779893192
 val libs = the<LibrariesForLibs>()
+val kotlinJvmVersion: String by project
 tasks {
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(kotlinJvmVersion.toInt())
     }
-    val kotlinJvmVersion: String by project
     withType<KotlinCompile> {
         kotlinOptions {
             // intellij gets confused without it
